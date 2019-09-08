@@ -36,3 +36,13 @@ def test_sum_of_multiples_divisible_by_3_less_then_103020():
     max_possible_sum_of_multiples = 3 * num_of_m * (num_of_m + 1) / 2
 
     assert sum_of_multiples_divisible_by_3(limit, m) <= max_possible_sum_of_multiples
+
+def test_with_negative_limit():
+    limit = -10
+    m = 5
+    assert sum_of_multiples_divisible_by_3(limit, m) == 0
+
+def test_with_negative_multiplier():
+    limit = 10
+    m = -2
+    assert sum_of_multiples_divisible_by_3(limit, m) == 0
