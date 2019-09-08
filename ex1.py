@@ -7,3 +7,6 @@ def sum_of_multiples_divisible_by_3(limit, m):
     # The only multiple of 0 is itself
     if m == 0:
         return 0
+
+    return sum(x for x in range(limit + 1) if x % m == 0)
+
