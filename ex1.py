@@ -8,5 +8,5 @@ def sum_of_multiples_divisible_by_3(limit, m):
     if m == 0:
         return 0
 
-    return sum(x for x in range(limit + 1) if x % m == 0 and x % 3 == 0)
+    return sum(x for x in range(0, limit + 1, m) if x % 3 == 0 and x < 102030)
 

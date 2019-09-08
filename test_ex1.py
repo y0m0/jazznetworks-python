@@ -26,3 +26,13 @@ def test_sum_of_multiples_divisible_by_3():
     m = 2
     assert sum_of_multiples_divisible_by_3(limit, m) == 6
 
+def test_sum_of_multiples_divisible_by_3_less_then_103020():
+    limit = 999990
+    m = 2
+
+    # calculate the biggest sum possibile if we assume that all multiples
+    # of 3 less then 102030 are included
+    num_of_m = 102030 - 3 / 3
+    max_possible_sum_of_multiples = 3 * num_of_m * (num_of_m + 1) / 2
+
+    assert sum_of_multiples_divisible_by_3(limit, m) <= max_possible_sum_of_multiples
