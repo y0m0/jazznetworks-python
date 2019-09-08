@@ -1,4 +1,4 @@
-def sum_of_multiples_divisible_by_3(limit, m):
+def sum_of_multiples_divisible_by_3(limit: int, m: int) -> int:
     """
     Generate all multiples of m from 0 up to and including a given limit
     Then sum all multiples which are also divisible by 3 and less then 102030
@@ -9,4 +9,3 @@ def sum_of_multiples_divisible_by_3(limit, m):
         return 0
 
     return sum(x for x in range(0, limit + 1, m) if x % 3 == 0 and x < 102030)
-
