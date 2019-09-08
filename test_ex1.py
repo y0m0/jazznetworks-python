@@ -19,5 +19,10 @@ def test_with_limit_1():
 def test_with_multiplier_1():
     limit = 10
     m = 1
-    sum_of_first_n_numbers = limit * (limit + 1) / 2
-    assert sum_of_multiples_divisible_by_3(limit, m) == sum_of_first_n_numbers
+    assert sum_of_multiples_divisible_by_3(limit, m) == 18
+
+def test_sum_of_multiples_divisible_by_3():
+    limit = 10
+    m = 2
+    assert sum_of_multiples_divisible_by_3(limit, m) == 6
+
