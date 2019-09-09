@@ -12,3 +12,8 @@ def test_with_n_3():
 
 def test_with_n_negative():
     assert consecutive_numbers(-3) == []
+
+def test_with_n_as_float():
+    """check that an exception is raised if a float number is passed instead of an int"""
+    with pytest.raises(Exception):
+        assert consecutive_numbers(2.5)
