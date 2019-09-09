@@ -9,3 +9,6 @@ def test_with_n_1():
 
 def test_with_n_3():
     assert consecutive_numbers(3) == [[1], [1,2], [1,2,3]]
+
+def test_with_n_negative():
+    assert consecutive_numbers(-3) == []
